@@ -153,7 +153,7 @@ export function fetchTokensImages (api, tokenReg, tokenIndexes) {
       return results.map((rawImage) => {
         const image = tokenReg.instance.meta.decodeOutput(rawImage)[0].value;
 
-        return hashToImageUrl(image);
+        return IconCache.hashToImage(image);
       });
     });
 }
