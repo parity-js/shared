@@ -1,15 +1,5 @@
 [
   {
-    "url": "chaindeploy",
-    "name": "Chain Deployment",
-    "package": "@parity/dapp-chaindeploy",
-    "description": "Deploy all basic contracts, names & applications to the network",
-    "author": "Parity Team <admin@parity.io>",
-    "version": "1.0.0",
-    "visible": false,
-    "noselect": false
-  },
-  {
     "id": "0xa635a9326814bded464190eddf0bdb90ce92d40ea2359cf553ea80e3c5a4076c",
     "url": "console",
     "name": "Parity/Web3 console",
@@ -18,16 +8,6 @@
     "version": "0.3",
     "author": "Gav Wood <gavin@parity.io>",
     "position": "top-right",
-    "visible": true
-  },
-  {
-    "id": "0xf9f2d620c2e08f83e45555247146c62185e4ab7cf82a4b9002a265a0d020348f",
-    "url": "tokendeploy",
-    "name": "Token Deployment",
-    "package": "@parity/dapp-tokendeploy",
-    "description": "Deploy new basic tokens that you are able to send around",
-    "author": "Parity Team <admin@parity.io>",
-    "version": "1.0.0",
     "visible": true
   },
   {
@@ -46,16 +26,6 @@
     "name": "Token Registry",
     "package": "@parity/dapp-tokenreg",
     "description": "A registry of transactable tokens on the network",
-    "author": "Parity Team <admin@parity.io>",
-    "version": "1.0.0",
-    "visible": true
-  },
-  {
-    "id": "0xf49089046f53f5d2e5f3513c1c32f5ff57d986e46309a42d2b249070e4e72c46",
-    "url": "signaturereg",
-    "name": "Method Registry",
-    "package": "@parity/dapp-signaturereg",
-    "description": "A registry of method signatures for lookups on transactions",
     "author": "Parity Team <admin@parity.io>",
     "version": "1.0.0",
     "visible": true
@@ -81,14 +51,4 @@
     "version": "1.0.0",
     "visible": true
   },
-  {
-    "id": "0x7bbc4f1a27628781b96213e781a1b8eec6982c1db8fac739af6e4c5a55862c03",
-    "url": "dappreg",
-    "name": "Dapp Registration",
-    "package": "@parity/dapp-dappreg",
-    "description": "Enables the registration and content management of dapps on the network",
-    "author": "Parity Team <admin@parity.io>",
-    "version": "1.0.0",
-    "visible": true
-  }
 ]
