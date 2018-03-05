@@ -46,7 +46,7 @@ export function subscribeToChanges (api, dappReg, callback) {
           fromBlock: '0',
           toBlock: 'latest',
           address: dappRegInstance.address,
-          topics: [ signatures ]
+          topics: [signatures]
         })
         .then((filterId) => {
           return api
@@ -145,7 +145,7 @@ export function fetchRegistryApp (api, dappReg, appId) {
       dappReg.getContent(appId),
       dappReg.getManifest(appId)
     ])
-    .then(([ imageId, contentId, manifestId ]) => {
+    .then(([imageId, contentId, manifestId]) => {
       const app = {
         id: appId,
         image: IconCache.hashToImage(imageId),
@@ -183,10 +183,16 @@ export function fetchManifest (api, manifestHash) {
     return Promise.resolve(null);
   }
 
-  return fetch(
-    `/api/content/${manifestHash}/`,
-    { redirect: 'follow', mode: 'cors' }
-  )
+  return api.parity
+    .dappsUrl()
+    .then(dappsUrl => {
+      const protocol = window.location.protocol === 'https:' ? 'https:' : 'http:';
+
+      return fetch(
+        `${protocol}//${dappsUrl}/api/content/${manifestHash}/`,
+        { redirect: 'follow', mode: 'cors' }
+      );
+    })
     .then((response) => {
       return response.ok
         ? response.json()
