@@ -45,6 +45,7 @@
   },
   "dependencies": {
     "@parity/ledger": "2.1.x",
+    "bignumber.js": "4.1.0",
     "eventemitter3": "^2.0.3",
     "loglevel": "1.4.1",
     "mobx": "2.6.4",
