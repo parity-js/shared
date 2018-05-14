@@ -31,5 +31,16 @@
     "author": "Parity Team <admin@parity.io>",
     "version": "2.0.1",
     "visible": true
+  },
+  {
+    "id": "0x89682fd2c0ffa4ff53a8dc2c5f6a65c6e31de8f659fa2935a07a678e711a58a3",
+    "url": "develop",
+    "src": "Develop",
+    "name": "Develop Contracts",
+    "package": "@parity/dapp-develop",
+    "description": "Watch and develop contracts",
+    "author": "Parity Team <admin@parity.io>",
+    "version": "1.0.2",
+    "visible": true
   }
 ]
