@@ -18,7 +18,6 @@ import { routerMiddleware } from 'react-router-redux';
 
 import ErrorsMiddleware from '@parity/ui/lib/Errors/middleware';
 
-import SettingsMiddleware from './providers/settings/middleware';
 import SignerMiddleware from './providers/signerMiddleware';
 
 import CertificationsMiddleware from './providers/certifications/middleware';
@@ -27,7 +26,6 @@ import RegistryMiddleware from './providers/registry/middleware';
 
 export default function (api, browserHistory, forEmbed = false) {
   const middleware = [
-    new SettingsMiddleware().toMiddleware(),
     new SignerMiddleware(api).toMiddleware(),
     new ErrorsMiddleware().toMiddleware(),
     new ChainMiddleware().toMiddleware()
