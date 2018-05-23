@@ -20,7 +20,7 @@ import { routerReducer } from 'react-router-redux';
 import {
   apiReducer, balancesReducer,
   workerReducer, personalReducer, requestsReducer,
-  settingsReducer, signerReducer, statusReducer as nodeStatusReducer,
+  signerReducer, statusReducer as nodeStatusReducer,
   snackbarReducer, tokensReducer, walletReducer
 } from './providers';
 import certificationsReducer from './providers/certifications/reducer';
@@ -33,8 +33,6 @@ export default function () {
     api: apiReducer,
     errors: errorReducer,
     routing: routerReducer,
-    settings: settingsReducer,
-
     balances: balancesReducer,
     certifications: certificationsReducer,
     nodeStatus: nodeStatusReducer,

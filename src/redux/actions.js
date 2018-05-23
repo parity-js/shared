@@ -18,12 +18,10 @@ import { newError } from '@parity/ui/lib/Errors/actions';
 
 import { openSnackbar, showSnackbar } from './providers/snackbarActions';
 import { toggleStatusRefresh } from './providers/statusActions';
-import { toggleView } from './providers/settings/actions';
 
 export {
   newError,
   openSnackbar,
   showSnackbar,
-  toggleStatusRefresh,
-  toggleView
+  toggleStatusRefresh
 };
