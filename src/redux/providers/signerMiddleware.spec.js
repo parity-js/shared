@@ -89,13 +89,7 @@ function createHwStore () {
 function createRedux () {
   return {
     dispatch: sinon.stub(),
-    getState: () => {
-      return {
-        worker: {
-          worker: null
-        }
-      };
-    }
+    getState: () => ({})
   };
 }
 

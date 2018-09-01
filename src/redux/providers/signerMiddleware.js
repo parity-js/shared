@@ -119,20 +119,7 @@ export default class SignerMiddleware {
   }
 
   confirmWalletTransaction (store, id, transaction, wallet, password) {
-    const { worker } = store.getState().worker;
-
-    const signerPromise = worker && worker._worker.state === 'activated'
-      ? worker
-        .postMessage({
-          action: 'getSignerSeed',
-          data: { wallet, password }
-        })
-        .then((result) => {
-          const seed = Buffer.from(result.data);
-
-          return new Signer(seed);
-        })
-      : Signer.fromJson(wallet, password);
+    const signerPromise = Signer.fromJson(wallet, password);
 
     // NOTE: Derving the key takes significant amount of time,
     // make sure to display some kind of "in-progress" state.

@@ -21,7 +21,6 @@ import initReducers from './reducers';
 
 import { load as loadWallet } from './providers/walletActions';
 import { init as initRequests } from './providers/requestsActions';
-import { setupWorker } from './providers/workerWrapper';
 import { setApi } from './providers/apiActions';
 
 import {
@@ -54,7 +53,6 @@ export default function (api, browserHistory, forEmbed = false) {
 
   store.dispatch(loadWallet(api));
   store.dispatch(initRequests(api));
-  setupWorker(store);
 
   const start = () => {
     return Promise.resolve()
