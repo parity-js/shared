@@ -3362,8 +3362,8 @@ user-home@^1.1.1:
   resolved "https://registry.yarnpkg.com/user-home/-/user-home-1.1.1.tgz#2b5be23a32b63a7c9deb8d0f28d485724a3df190"
 
 useragent.js@^0.5.6:
-  version "0.5.6"
-  resolved "https://registry.yarnpkg.com/useragent.js/-/useragent.js-0.5.6.tgz#a76aef101e2483702523ff6fb58a400af77e22a9"
+  version "0.5.7"
+  resolved "https://registry.yarnpkg.com/useragent.js/-/useragent.js-0.5.7.tgz#544de805b67b4510c0e955871daaa8a140cdffb0"
 
 util-deprecate@~1.0.1:
   version "1.0.2"
