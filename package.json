@@ -51,7 +51,7 @@
     "push.js": "1.0.9",
     "react-redux": "6.0.1",
     "redux": "4.0.1",
-    "redux-actions": "2.6.4",
+    "redux-actions": "2.6.5",
     "redux-thunk": "2.3.0",
     "scryptsy": "2.0.0",
     "solc": "ngotchac/solc-js",
